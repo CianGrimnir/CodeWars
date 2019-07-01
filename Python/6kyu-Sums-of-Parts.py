@@ -13,8 +13,6 @@
 # The corresponding sums are (put together in a list): [20, 20, 19, 16, 10, 0]
 
 
-# Solution 1:
-
 from functools import reduce
 
 def parts_sums(ls):
