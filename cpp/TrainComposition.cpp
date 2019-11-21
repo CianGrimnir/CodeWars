@@ -40,7 +40,6 @@ public:
     {
         TrainNode *tmp=new TrainNode(wagonId);
         if(leftMost !=NULL){
-            //there are trains in the composition
             leftMost->setLeftTrain(tmp);
             tmp->setRightTrain(leftMost);
             leftMost=tmp;
@@ -54,7 +53,6 @@ public:
     {
         TrainNode *tmp=new TrainNode(wagonId);
         if(rightMost !=NULL){
-            //there are trains in the composition
             rightMost->setRightTrain(tmp);
             tmp->setLeftTrain(rightMost);
             rightMost=tmp;
@@ -69,7 +67,6 @@ public:
     {
         TrainNode *tmp;
         if(leftMost!=NULL){
-            //there are trins in the composition
             tmp=leftMost;
             leftMost=leftMost->getRightTrain();
             int tmpValue=tmp->getValue();
@@ -84,7 +81,6 @@ public:
     {
         TrainNode *tmp;
         if(rightMost!=NULL){
-            //there are trins in the composition
             tmp=rightMost;
             rightMost=rightMost->getLeftTrain();
             int tmpValue=tmp->getValue();
